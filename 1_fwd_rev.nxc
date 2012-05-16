@@ -9,12 +9,12 @@
 
 task main()
 {
-	//Advancing 5 seconds 
+	//On Forward 5 seconds 
 	OnFwd(OUT_A, 75);
 	OnFwd(OUT_B, 75);
 	Wait(5000);
 
-	//Recedes 5 seconds
+	//On Reverse 5 seconds
 	OnRev(OUT_AB, 75);
 	Wait(5000);
 
