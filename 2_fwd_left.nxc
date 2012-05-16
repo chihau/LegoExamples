@@ -9,7 +9,7 @@
 
 tast main() {
 
-	//Advancing 5 seconds;
+	//On Forward 5 seconds;
 	OnFwd(OUT_AB, 75);
 	Wait(5000);
 
@@ -17,7 +17,7 @@ tast main() {
 	OnRev(OUT_B, 75);
 	Wait(360);
 
-	//Advancing 5 seconds;
+	//On Forward 5 seconds;
 	OnFwd(OUT_AB, 75);
 	Wait(5000);
 
