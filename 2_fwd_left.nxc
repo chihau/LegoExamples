@@ -7,7 +7,7 @@
 *	The motors are connected in A and B outputs  
 */
 
-tast main() {
+task main() {
 
 	//On Forward 5 seconds;
 	OnFwd(OUT_AB, 75);
