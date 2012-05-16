@@ -1,0 +1,32 @@
+/* 
+*	Lego NXT Robotics - Basic NXC programming examples
+*
+*	This example is for the standard robot constructed with the user manual 
+*	included in the Lego NXT kit.
+*
+*	The motors are connected in A and B outputs.
+*   
+*   The robot will form a square in the surface.  
+*/
+
+// Defining a constant for the forwarding time and other for the turning time
+#define MOV_TIME 5000
+#define TURN_TIME 300 //This depends on the roughness of the surface
+
+task main() {
+
+	// Repeat this 4 times
+	repeat(4) {
+		
+		// On Forward 5 seconds 
+		OnFwd(OUT_AB, 75);
+		Wait(MOV_TIME);
+
+		// Turn on the left
+		OnRev(OUT_B, 75);
+		Wait(TURN_TIME);
+	}
+
+	// Poweroff the motors
+	Off(OUT_AB);	
+}

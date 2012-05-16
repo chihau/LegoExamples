@@ -1,0 +1,30 @@
+/* 
+*	Lego NXT Robotics - Basic NXC programming examples
+*
+*	This example is for the standard robot constructed with the user manual 
+*	included in the Lego NXT kit.
+*
+*	The motors are connected in A and B outputs.
+*   
+*   The robot will form a spiral in the surface.  
+*/
+
+#define TURN_TIME 300
+
+int mov_time; 
+
+task main() {
+	int mov_time = 200;
+	
+	repeat(50) {
+		OnFwd(OUT_AB, 75);
+		Wait(mov_time);
+		
+		OnRev(OUT_B, 75);
+		Wait(TURN_TIME);
+		
+		mov_time += 200;
+	}
+
+	Off(OUT_AB);
+}
