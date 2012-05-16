@@ -15,7 +15,7 @@ task main() {
 
 	//Turning to left
 	OnRev(OUT_B, 75);
-	Wait(360);
+	Wait(300);
 
 	//On Forward 5 seconds;
 	OnFwd(OUT_AB, 75);
