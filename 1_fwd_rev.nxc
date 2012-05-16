@@ -1,0 +1,23 @@
+/* 
+*	Lego NXT Robotics - Basic NXC programming examples
+*
+*	This example is for the standard robot constructed with the user manual 
+*	included in the Lego NXT kit.
+*
+*	The motors are connected in A and B outputs  
+*/
+
+task main()
+{
+	//Advancing 5 seconds 
+	OnFwd(OUT_A, 75);
+	OnFwd(OUT_B, 75);
+	Wait(5000);
+
+	//Recedes 5 seconds
+	OnRev(OUT_AB, 75);
+	Wait(5000);
+
+	//Shutdown motors
+	Off(OUT_AB);
+}
