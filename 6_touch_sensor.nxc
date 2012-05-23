@@ -12,6 +12,6 @@
 task main() {
 	SetSensor(IN_1, SENSOR_TOUCH);
 	OnRev(OUT_AB, 75);
-	until(SENSOR_1 == 1); // 0 sensor libre, 1 sensor presionado
+	until(SENSOR_1 == 1); // 0 untouched, 1 touched
 	Off(OUT_AB);
 }
