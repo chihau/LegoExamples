@@ -7,7 +7,7 @@
 *	The motors are connected in A, B outputs and the Light Sensor is in the 
 *	input 2.
 *   
-*   The robot will run on forward until the floor is white.
+*	The robot will run on forward until the floor is white.
 */
 
 #define BRIGHT 50
