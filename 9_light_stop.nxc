@@ -1,0 +1,20 @@
+/* 
+*	Lego NXT Robotics - Basic NXC programming examples
+*
+*	This example is for the standard robot constructed with the user manual 
+*	included in the Lego NXT kit.
+*
+*	The motors are connected in A, B outputs and the Light Sensor is in the 
+*	input 2.
+*   
+*   The robot will run on forward until the floor is white.
+*/
+
+#define BRIGHT 50
+
+task main() {
+	SetSensorLight(IN_3);
+	OnFwd(OUT_AB, 75);
+	while(Sensor(IN_3) < BRIGHT);
+	Off(OUT_AB);
+}

@@ -1,0 +1,36 @@
+/* 
+*	Lego NXT Robotics - Basic NXC programming examples
+*
+*	This example is for the standard robot constructed with the user manual 
+*	included in the Lego NXT kit.
+*
+*	The motors are connected in A, B outputs and the Ultrasonic Sensor is in 2 
+*	input.
+*   
+*   The robot will run on forward, if another object is in front at 25 cm, the
+*	robot will run on reverse 1 second, will turn to left and will continue 
+*	running on forward.
+*/
+
+#define DISTANCE 25 //cm
+
+task main() {
+	SetSensorLowspeed(IN_1);
+	
+	while(true) {
+		//On Forward until the distance is <= to 25 cm
+		OnFwd(OUT_AB, 50);
+		while(SensorUS(IN_1) > DISTANCE);
+		Off(OUT_AB); 
+
+		//On reverse 1 second
+		OnRev(OUT_AB, 50);
+		Wait(1000);
+		Off(OUT_AB);
+
+		//Turning to left
+		OnRev(OUT_B, 75);
+		Wait(300);
+		Off(OUT_B);
+	}
+}
