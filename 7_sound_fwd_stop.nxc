@@ -1,0 +1,28 @@
+/* 
+*	Lego NXT Robotics - Basic NXC programming examples
+*
+*	This example is for the standard robot constructed with the user manual 
+*	included in the Lego NXT kit.
+*
+*	The motors are connected in A, B outputs and the Sound Sensor is in the 
+*	input 2.
+*   
+*   The robot will run on forward, if you clap the robot stop and if you clap 
+*	the robot will continue running on forward again.
+*/
+
+#define VOL 40
+#define MIC SENSOR_2
+
+task main() {
+	SetSensorSound(IN_2);
+	
+	while(true) {
+		until(MIC > VOL);
+		OnFwd(OUT_AB, 75);
+		Wait(1000);		
+		until(MIC > VOL);
+		Off(OUT_AB);
+		Wait(1000);
+	}
+}
