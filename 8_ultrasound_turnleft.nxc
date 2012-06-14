@@ -7,7 +7,7 @@
 *	The motors are connected in A, B outputs and the Ultrasonic Sensor is in 2 
 *	input.
 *   
-*   The robot will run on forward, if another object is in front at 25 cm, the
+*	The robot will run on forward, if another object is in front at 25 cm, the
 *	robot will run on reverse 1 second, will turn to left and will continue 
 *	running on forward.
 */
