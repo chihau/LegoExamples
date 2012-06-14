@@ -7,7 +7,7 @@
 *	The motors are connected in A, B outputs and the Sound Sensor is in the 
 *	input 2.
 *   
-*   The robot will run on forward, if you clap the robot stop and if you clap 
+*	The robot will run on forward, if you clap the robot stop and if you clap 
 *	the robot will continue running on forward again.
 */
 

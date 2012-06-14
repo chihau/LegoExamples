@@ -6,7 +6,7 @@
 *
 *	The motors are connected in A and B outputs.
 *   
-*   The robot will turn right or left in random manner.  
+*	The robot will turn right or left in random manner.  
 */
 
 #define TURN_TIME 300

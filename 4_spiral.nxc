@@ -6,7 +6,7 @@
 *
 *	The motors are connected in A and B outputs.
 *   
-*   The robot will form a spiral in the surface.  
+*	The robot will form a spiral in the surface.  
 */
 
 #define TURN_TIME 300

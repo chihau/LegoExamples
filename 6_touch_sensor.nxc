@@ -6,7 +6,7 @@
 *
 *	The motors are connected in A and B outputs.
 *   
-*   The robot will run on reverse until the touch sensor is pressed.  
+*	The robot will run on reverse until the touch sensor is pressed.  
 */
 
 task main() {
