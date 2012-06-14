@@ -4,7 +4,7 @@
 *	This example is for the standard robot constructed with the user manual 
 *	included in the Lego NXT kit.
 *
-*	The motors are connected in A, B outputs and the Ultrasonic Sensor is in 2 
+*	The motors are connected in A, B outputs and the Ultrasonic Sensor is in 1 
 *	input.
 *   
 *	The robot will run on forward, if another object is in front at 25 cm, the
